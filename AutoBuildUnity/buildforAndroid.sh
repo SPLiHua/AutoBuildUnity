@@ -24,7 +24,10 @@ cd ${UnityProjectPath}/../..
 
 git checkout .
 git pull
-git pull --recurse-submodules
+
+cd ${UnityProjectPath}/Assets/Skylark
+git checkout .
+git pull
 
 cd ${UnityProjectPath}
 if [ -d "${UnityProjectPath}/Assets/StreamingAssets/AssetBundles" ]; then
