@@ -1,8 +1,8 @@
 androidProjectName="GameAtom"
 echo "Build AndroidProject Start"
 
-oldSrcPath=/Users/wangmuyao/Desktop/GitProjects/DetectiveAS/ASDetective/unityLibrary/src/main
-buildToolPath=/Users/wangmuyao/Desktop/GitProjects/DetectiveAS/ASDetective
+oldSrcPath=/home/muyao/ASBuild/Detective/unityLibrary/src/main
+buildToolPath=/home/muyao/ASBuild/Detective
 
 fileName=`date '+%Y_%m_%d|%H.%M.%S'`
 if [ ! -d "${ASProjectPath}/AND" ]; then
@@ -22,8 +22,9 @@ cd ${UnityProjectPath}/..
 # svn status | grep '^aM' | sed -e 's/^.//' | xargs rm
 # svn up
 
-# git check .
-# git pull
+git checkout .
+git pull
+git pull --recurse-submodules
 
 if [ -d "${UnityProjectPath}/Assets/StreamingAssets/AssetBundles" ]; then
 rm -rf ${UnityProjectPath}/Assets/StreamingAssets/AssetBundles/*

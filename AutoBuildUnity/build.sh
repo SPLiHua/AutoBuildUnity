@@ -1,10 +1,10 @@
-export unity=/Applications/Unity/Hub/Editor/2020.3.13f1c1/Unity.app/Contents/MacOS/Unity
-export logFile=/Users/wangmuyao/Desktop/ASProjects/Detective
-export ASProjectPath=/Users/wangmuyao/Desktop/ASProjects/Detective
-export UnityProjectPath=/Users/wangmuyao/Desktop/GitProjects/FirstPlan/Client/FirstProject
+export unity=/home/muyao/Unity/Hub/Editor/2020.3.20f1/Editor/Unity
+export logFile=/home/muyao/ASProject/DetectiveAS
+export ASProjectPath=/home/muyao/ASProject/DetectiveAS
+export UnityProjectPath=/home/muyao/GitProject/Detective/Client/FirstProject
 
-buildforAndorid=/Users/wangmuyao/Desktop/AutoBuildUnity/buildforAndroid.sh
-buildforIos=/Users/wangmuyao/Desktop/AutoBuildUnity/buildforios.sh
+buildforAndorid=/home/muyao/GitProject/AutoBuild/AutoBuildUnity/buildforAndroid.sh
+buildforIos=/home/muyao/GitProject/AutoBuild/AutoBuildUnity/buildforios.sh
 
 version="0.0.1"
 KeystoreName="KeystoreName"
