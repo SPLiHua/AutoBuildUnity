@@ -16,7 +16,7 @@ ipaname=${fileName}${RANDOM}
 #fi
 outpath=${ASProjectPath}/AND
 
-cd ${UnityProjectPath}/..
+cd ${UnityProjectPath}/../..
 # svn revert -R .
 # svn status | grep '^a?' | sed -e 's/^.//' | xargs rm
 # svn status | grep '^aM' | sed -e 's/^.//' | xargs rm
@@ -26,6 +26,7 @@ git checkout .
 git pull
 git pull --recurse-submodules
 
+cd ${UnityProjectPath}
 if [ -d "${UnityProjectPath}/Assets/StreamingAssets/AssetBundles" ]; then
 rm -rf ${UnityProjectPath}/Assets/StreamingAssets/AssetBundles/*
 fi
