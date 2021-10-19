@@ -44,7 +44,7 @@ echo "Build AndroidProject Success"
 cd ${oldSrcPath}
 rm -rf assets
 rm -rf Il2CppOutputProject
-#rm -rf java
+rm -rf java
 rm -rf jniLibs
 rm -rf jniStaticLibs
 rm -rf res
@@ -59,10 +59,13 @@ cd ${outpath}/unityLibrary/src/main
 
 cp -r assets ${oldSrcPath}
 cp -r Il2CppOutputProject ${oldSrcPath}
-#cp -r java ${oldSrcPath}
+cp -r java ${oldSrcPath}
 cp -r jniLibs ${oldSrcPath}
 cp -r jniStaticLibs ${oldSrcPath}
 cp -r res ${oldSrcPath}
+
+cd ${outpath}/unityLibrary
+rm -rf libs
 echo "Move New UnityLibrary Success"
 
 cd $buildToolPath && ./gradlew assemble
