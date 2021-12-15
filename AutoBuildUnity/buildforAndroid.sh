@@ -22,11 +22,11 @@ cd ${UnityProjectPath}/../..
 # svn status | grep '^aM' | sed -e 's/^.//' | xargs rm
 # svn up
 
-git checkout .
+# git checkout .
 git pull
 
 cd ${UnityProjectPath}/Assets/Skylark
-git checkout .
+# git checkout .
 git pull
 
 cd ${UnityProjectPath}
