@@ -1,7 +1,7 @@
 export unity=/home/muyao/Unity/Hub/Editor/2020.3.20f1/Editor/Unity
 export logFile=/home/muyao/ASProject/DetectiveAS
 export ASProjectPath=/home/muyao/ASProject/DetectiveAS
-export UnityProjectPath=/home/muyao/GitProject/Detective/Client/FirstProject
+export UnityProjectPath=/home/muyao/GitProject/Detective/Client/Detective
 
 buildforAndorid=/home/muyao/GitProject/AutoBuild/AutoBuildUnity/buildforAndroid.sh
 buildforIos=/home/muyao/GitProject/AutoBuild/AutoBuildUnity/buildforios.sh
